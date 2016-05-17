@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+	employeeService: Ember.inject.service('employee'),
 	model: function(){
 
 		// Create a <script> tag and set the USGS URL as the source.
@@ -12,16 +13,7 @@ export default Ember.Route.extend({
       // Loop through the results array and place a marker for each
       // set of coordinates.
       // window.eqfeed_callback = function(results) {
-      // }
-
-		return [{
-			"geometry": {
-				"type":"Point","coordinates":[-151.8382,61.5375,0]}
-			},{
-			"geometry": {
-				"type":"Point","coordinates":[-122.424213,37.7576171,0]}
-			}			
-		];
+		return this.get('employeeService').markers();
 
 
         
