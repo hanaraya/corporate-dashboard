@@ -1,10 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  markers: Ember.computed('params.[]', function(){
-    return this.get('params')[0];
-  }),
-
   map : null,
 
   insertMap: function() {
@@ -23,8 +19,7 @@ export default Ember.Component.extend({
     return;
   }
   var map = this.get('map');
-  console.log(markers);
-  var style = 'CIRCLE';
+  var style = this.get('style');
   markers.forEach(function(marker){
     var coords = marker.geometry.location;
     var count = marker.count;
