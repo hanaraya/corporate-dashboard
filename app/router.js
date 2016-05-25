@@ -7,7 +7,10 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('geospatial');
-  this.route('metrics');
+  this.route('metrics', function() {
+    this.route('paying-customers');
+    this.route('reported-issues');
+  });
   this.route('issues');
 });
 

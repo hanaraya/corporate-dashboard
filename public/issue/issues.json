@@ -1,13 +1,23 @@
-{"payingCustomers": [
+{"issues": [
     {
       "time": "2013-05-15",
       "label": "Paying Customers",
-      "value": 30,
+      "value": 90,
       "type": "money"
     }, {
       "time": "2013-06-15",
       "label": "Paying Customers",
       "value": 40,
+      "type": "money"
+    }, {
+      "time": "2014-01-16",
+      "label": "Paying Customers",
+      "value": 70,
+      "type": "money"
+    }, {
+      "time": "2014-03-16",
+      "label": "Paying Customers",
+      "value": 80,
       "type": "money"
     }, {
       "time": "2014-07-16",
@@ -22,7 +32,7 @@
     }, {
       "time": "2015-09-16",
       "label": "Paying Customers",
-      "value": 46,
+      "value": 40,
       "type": "money"
     }
   ]}
