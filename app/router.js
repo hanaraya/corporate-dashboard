@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('geospatial', {path:'/'});
   this.route('geospatial');
   this.route('metrics', function() {
     this.route('paying-customers');
