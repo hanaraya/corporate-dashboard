@@ -1,0 +1,20 @@
+{{#if data}}
+<table border="1">
+{{#if header}}
+<tr>
+{{#each header as |th|}}
+	<th>{{th}}</th>
+{{/each}}
+</tr>
+{{/if}}
+{{#each data as |row|}}
+	<tr>
+	{{#each row as |col|}}
+		<td>{{col}}</td>
+	{{/each}}
+	</tr>
+{{/each}}
+
+</table>
+{{/if}}
+{{yield}}
